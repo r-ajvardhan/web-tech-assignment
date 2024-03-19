@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #070508;
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
+}
+
+#store-logo {
+  width: 60px;
+  border-radius: 100%;
+
+}
+
+.logo a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.logo h1:hover {
+  color: #e41d25;
+}
+
+.logo h1 {
+  color: #9FA9B2;
+  padding: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #9FA9B2;
+  padding-left: 50px;
+}
+
+.menu a:hover {
+
+  color: #e41d25;
+}
+
+.welcome-note {
+  background-color: #e41d25;
+  text-align: center;
+}
+
+.welcome-note p {
+  text-align: left;
+  font-size: larger;
+  padding: 25px 50px 25px;
+}
+
+.products {
+  margin: 30px;
+
+}
+
+.products h2 {
+  text-align: center;
+
+}
+
+.products ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.products ul li {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  background: white;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.products ul li:hover {
+  transition: 0.25s;
+  background: #070508e8;
+  border-radius: 10px;
+}
+
+.products ul li:hover {
+  color: white;
+}
+
+.products li img {
+  max-width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+
+.new-arrivals , .banner{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.new-arrivals img , .banner img{
+  width: 50%;
+}
+
+.new-arrivals:hover{ 
+  transition: 0.5s;
+  background:#e41d25;
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#services p{
+  padding: 50px;
+  padding-top: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#services p:hover{
+  color: #e41d25;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/latveria.png");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 200px;
+
+}
+
+.about h1 {
+  background: #e41d25;
+  backdrop-filter: blur(2px);
+
+  text-align: center;
+  font-weight: bold;
+  padding:10px
+}
+
+.about p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+  overflow: hidden;
+  height: 100%;
+  background: #e41d25;
+  backdrop-filter: blur(2px);
+  
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: #070508;
+  color: #9FA9B2;
+}
+
+@media screen and (max-width:800px) {
+  .welcome-note p {
+    display: none;
+  }
+
+  .menu a {
+    padding-left: 0;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .products p {
+    display: none;
+  }
+
+  .products ul li{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .products ul li:hover {
+    transition: 0.25s;
+    scale: 1.1;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .products ul li:active img{
+    display: none;
+  }
+
+  .products ul li:active h3{
+    display: none;
+  }
+
+  .products ul li:active p{
+    display: block;
+    padding: 10px;
+  }
+
+  .about {
+    height: 200px;
+  }
+
+  .about p {
+    font-size: x-small;
+  }
+  .new-arrivals div{
+    display: none;
+  }
+  .new-arrivals img{
+    width: 100vw;
+  }
+
+  #services {
+    display: none;
+  }
+
+  #contact {
+    display: inline;
+  }
+}

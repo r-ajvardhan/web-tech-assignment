@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="login.css" rel="stylesheet" />
+    <title>login</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./index.html#services">Services</a>
+        <a href="./index.html#about">About</a>
+        <a href="./login.html">Login</a>
+      </div>
+    </nav>
+    <main>
+      <form action="">
+        <h1>Welcome</h1>
+        <img src="assets/logo.avif" />
+        <input type="text" name="user" id="username" placeholder="Username" default="default" minlength="1" required/>
+        <input
+          type="password"
+          name="pass"
+          id="password"
+          placeholder="Password"
+          required
+
+        />
+
+        <p id="response"></p>
+
+        <button type="button" onclick="validate()">Login</button>
+        <button type="button" onclick="signup()">sign up</button>
+        <a href="./index.html">Back to Home</a>
+      </form>
+    </main>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
