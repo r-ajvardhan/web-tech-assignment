@@ -22,6 +22,7 @@ nav {
   background-color: #070508;
   position: sticky;
   top: 0;
+  font-size: large;
 
   z-index: 10;
 }
@@ -138,6 +139,7 @@ nav {
 #services p{
   padding: 50px;
   padding-top: 0px;
+  font-size: large;
   font-weight: bold;
   text-align: center;
 }
@@ -149,12 +151,7 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/latveria.png");
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-  height: 200px;
-
+  height: fit-content;
 }
 
 .about h1 {
@@ -163,7 +160,7 @@ nav {
 
   text-align: center;
   font-weight: bold;
-  padding:10px
+  padding:20px
 }
 
 .about p{
@@ -177,7 +174,7 @@ nav {
   overflow: hidden;
   height: 100%;
   background: #e41d25;
-  backdrop-filter: blur(2px);
+  padding: 25px;
   
 }
 
