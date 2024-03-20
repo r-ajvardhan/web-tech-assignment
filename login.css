@@ -9,6 +9,10 @@ body {
     margin: 0;
     padding: 0;
     background: #070508ec;
+
+    background-image: url(./assets/bg.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 nav {
@@ -20,6 +24,7 @@ nav {
     top: 0;
     font-size: large;
 }
+
 
 .menu {
     width: 100%;
@@ -40,20 +45,19 @@ nav {
 }
 
 main {
-    margin: 50px;
+    margin: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 350px;
     border-radius: 10px;
     flex-direction: column;
-    background: whitesmoke;
+    background: rgba(245, 245, 245, 0.5);
 }
 
 form h1 {
