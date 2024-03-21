@@ -9,8 +9,10 @@ function validate() {
   for (let i = 0; i < username.length; i++) {
     if (password[i] == pass && username[i] == user) {
       //redirect
-      window.location.replace("./index.html");
+      // window.location.replace("./index.html");
+      window.open("./index.html")
       return;
+
     }
   }
 
